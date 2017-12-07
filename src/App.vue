@@ -23,12 +23,20 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'app',
-  data () {
+  data() {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created() {
+//    axios.get('url')
+//    .then(response => {
+//      console.log(response);
+//    })
   }
 }
 </script>
