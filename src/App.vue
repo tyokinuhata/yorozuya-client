@@ -2,12 +2,22 @@
   <div id="app">
     <div class="container">
       <h1 class="title">経営シミュレーションゲーム<span>「YOROZUYA for ITC」</span></h1>
-      <div class="game">
-        <router-link to="/foo">Foo</router-link>
-        <router-link to="/bar">Bar</router-link>
+      <div class="main">
+        <div class="game">
+          <router-link to="/foo">Foo</router-link>
+          <router-link to="/bar">Bar</router-link>
+          <router-view></router-view>
+        </div>
+        <a href="#" class="ranking link" target="_blank">ランキング ページ</a>
       </div>
-      <a href="#" class="ranking link" target="_blank">ランキング ページ</a>
-      <router-view></router-view>
+      <hr class="hr">
+      <div class="sub">
+        <h2 class="subTitle">■スペシャルサンクス</h2>
+        <ul class="list">
+          <li><a href="http://www.shiftup.net/flash/game/scrYorozu.html" target="_blank" class="link">YOROZUYA</a> - リスペクト</li>
+          <li><a href="http://www.irasutoya.com/" target="_blank" class="link">いらすとや</a> - hogehoge</li>
+        </ul>
+      </div>
       <footer class="footer">Copyright 2017 <a href="https://itc.moe/" target="_blank" class="link">ITC</a>.</footer>
     </div>
   </div>
@@ -73,6 +83,12 @@ export default {
   text-align: center;
 }
 
+.subTitle {
+  margin-left: 5px;
+  color: #e4feef;
+  font-size: 16px;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -89,5 +105,13 @@ export default {
   &:active {
     color: #eb48f7
   }
+}
+
+.list {
+  color: #e4feef;
+}
+
+.hr {
+  margin: 0 5px;
 }
 </style>
