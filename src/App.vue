@@ -1,24 +1,13 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-    <router-link to="/foo">Foo</router-link>
-    <router-link to="/bar">Bar</router-link>
-    <router-view></router-view>
+    <div class="container">
+      <h1 class="title">経営シミュレーションゲーム<span>「YOROZUYA for ITC」</span></h1>
+      <router-link to="/foo">Foo</router-link>
+      <router-link to="/bar">Bar</router-link>
+      <router-link to="/ranking" class="link">ランキング ページ</router-link>
+      <router-view></router-view>
+      <footer class="footer">Copyright 2017 <a href="https://itc.moe/" target="_blank" class="link">ITC</a>.</footer>
+    </div>
   </div>
 </template>
 
@@ -41,31 +30,48 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background: #ede8de;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 700px;
+  background: #55864b;
+}
+
+.title {
+  margin: 0;
+  height: 60px;
+  line-height: 50px;
+  background: #36652c;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #e4feef;
+  font-size: 16px;
+  & > span {
+    font-size: 18px;
+  }
 }
 
-h1, h2 {
-  font-weight: normal;
+.footer {
+  position: absolute;
+  bottom: 0;
+  left:5px;
+  color: #e4feef;
+  font-style: italic;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
+.link {
+  color: #d2c7f0;
+  &:visited {
+    color: #f2cad9;
+  }
+  &:active {
+    color: #eb48f7
+  }
 }
 </style>

@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import axios from 'axios'
 import App from './App.vue'
 
 Vue.use(VueRouter)
 
 const Foo = { template: '<div>foo</div>' }
 const Bar = { template: '<div>bar</div>' }
+const Ranking = { template: '<div>ranking</div>' }
 
 const routes = [
   {
@@ -16,6 +16,10 @@ const routes = [
   {
     path: '/bar',
     component: Bar
+  },
+  {
+    path: '/ranking',
+    component: Ranking
   }
 ]
 
