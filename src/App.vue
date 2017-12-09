@@ -2,9 +2,11 @@
   <div id="app">
     <div class="container">
       <h1 class="title">経営シミュレーションゲーム<span>「YOROZUYA for ITC」</span></h1>
-      <router-link to="/foo">Foo</router-link>
-      <router-link to="/bar">Bar</router-link>
-      <router-link to="/ranking" class="link">ランキング ページ</router-link>
+      <div class="game">
+        <router-link to="/foo">Foo</router-link>
+        <router-link to="/bar">Bar</router-link>
+      </div>
+      <a href="#" class="ranking link" target="_blank">ランキング ページ</a>
       <router-view></router-view>
       <footer class="footer">Copyright 2017 <a href="https://itc.moe/" target="_blank" class="link">ITC</a>.</footer>
     </div>
@@ -55,6 +57,20 @@ export default {
   & > span {
     font-size: 18px;
   }
+}
+
+.game {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 80%;
+  height: 400px;
+  background: #000;
+}
+
+.ranking {
+  margin: 5px;
+  display: block;
+  text-align: center;
 }
 
 .footer {
