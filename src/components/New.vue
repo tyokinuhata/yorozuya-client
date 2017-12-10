@@ -1,10 +1,9 @@
 <template>
   <div class="game-wrapper">
     <div class="message">
-      <label for="shop-name">店名：</label>
-      <input name="shop-name" type="text" v-model="shopName">
-      <button @click="submit">OK</button>
-      <button @click="submit">キャンセル</button>
+      <label for="shop-name">店名: </label>
+      <input name="shop-name" type="text" v-model="shopName" id="shop-name" class="textBox" placeholder="よろずや">
+      <button @click="submit" class="button">OK</button>
     </div>
   </div>
 </template>
@@ -12,21 +11,21 @@
 <script>
 export default {
   data: function() {
-      return {
-        shopName: ''
+    return {
+      shopName: ''
+    }
+  },
+  methods: {
+    submit: function() {
+      if (this.shopName !== '') {
+        localStorage.setItem('shopName', this.shopName)
+      } else {
+        localStorage.setItem('shopName', 'よろずや')
       }
-    },
-    methods: {
-      submit: function() {
-        if (this.shopName === '') {
-          localStorage.setItem('shopName', 'よろずや')
-          window.location = '/#/day'
-        } else {
-          localStorage.setItem('shopName', this.shopName)
-        }
-      }
+      window.location = '/#/day'
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -35,33 +34,36 @@ export default {
   position: relative;
 }
 
-.menu {
-  color: #fff;
-  position: absolute;
-  bottom: 10rem;
-  & a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    display: block;
-    width: 5rem;
-    padding: 0.5rem 1rem;
-    border: white solid 2px;
-    &:hover {
-      background-color:#aaa;
-    }
-  }
-}
-
 .message {
   position: absolute;
   bottom: 1rem;
+  width: 90%;
+  margin: 0 2%;
   padding: 2rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 2px solid #fff;
-  border-radius: 4px;
   color: #fff;
+}
+
+.textBox {
+  width: 250px;
+  height: 20px;
+  font-size: 16px;
+}
+
+.button {
+  height: 30px;
+  width: 130px;
+  border: 1px solid #fff;
+  border-radius: 0;
+  background: #000;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background: #aaa;
+  }
 }
 </style>
