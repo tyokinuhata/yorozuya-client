@@ -4,6 +4,16 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import New from './components/New.vue'
 import Continue from './components/Continue.vue'
+import Day from './components/Day.vue'
+import Morning from './components/Morning.vue'
+import Afternoon from './components/Afternoon.vue'
+import Evening from './components/Evening.vue'
+import Stocking from './components/Stocking.vue'
+import Making from './components/Making.vue'
+import Adventure from './components/Adventure.vue'
+import Opening from './components/Opening.vue'
+import Drop from './components/Drop.vue'
+import Calc from './components/Calc.vue'
 
 Vue.use(VueRouter)
 
