@@ -1,25 +1,60 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import App from './App.vue'
+import New from './components/New.vue'
+import Continue from './components/Continue.vue'
 
 Vue.use(VueRouter)
 
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
-const Ranking = { template: '<div>ranking</div>' }
-
 const routes = [
   {
-    path: '/foo',
-    component: Foo
+    path: '/new',
+    component: New
   },
   {
-    path: '/bar',
-    component: Bar
+    path: '/continue',
+    component: Continue
   },
   {
-    path: '/ranking',
-    component: Ranking
+    path: '/day',
+    component: Day
+  },
+  {
+    path: '/day/morning',
+    component: Morning
+  },
+  {
+    path: '/day/afternoon',
+    component: Afternoon
+  },
+  {
+    path: '/day/evening',
+    component: Evening
+  },
+  {
+    path: '/stocking',
+    component: Stocking
+  },
+  {
+    path: '/making',
+    component: Making
+  },
+  {
+    path: '/adventure',
+    component: Adventure
+  },
+  {
+    path: '/opening',
+    component: Opening
+  },
+  {
+    path: '/drop',
+    component: Drop
+  },
+  {
+    path: '/calc',
+    component: Calc
   }
 ]
 
