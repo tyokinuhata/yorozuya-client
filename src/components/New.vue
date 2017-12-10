@@ -22,6 +22,15 @@ export default {
       } else {
         localStorage.setItem('shopName', 'よろずや')
       }
+      localStorage.setItem('dayCount', 1)
+      localStorage.setItem('dayOfWeek', '月')
+      localStorage.setItem('dayOfStage', '朝')
+      localStorage.setItem('weather', '晴れ')
+      localStorage.setItem('money', 1000)
+      localStorage.setItem('population', 1)
+      localStorage.setItem('itemCount', 1)
+      localStorage.setItem('sellRecord', 0)
+      localStorage.setItem('moneyRecord', 1000)
       window.location = '/#/day'
     }
   }
