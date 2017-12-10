@@ -40,7 +40,7 @@
     font-weight: bold;
     color: white;
     &:hover {
-      background-color:#aaa;
+      background-color: #aaa;
     }
   }
 }
