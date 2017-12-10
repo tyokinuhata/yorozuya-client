@@ -13,7 +13,7 @@
         <h2 class="subTitle">■スペシャルサンクス</h2>
         <ul class="list">
           <li><a href="http://www.shiftup.net/flash/game/scrYorozu.html" target="_blank" class="link">YOROZUYA</a> - リスペクト</li>
-          <li><a href="http://www.irasutoya.com/" target="_blank" class="link">いらすとや</a> - hogehoge</li>
+          <li><a href="http://www.irasutoya.com/" target="_blank" class="link">いらすとや</a> - 素材</li>
         </ul>
       </div>
       <footer class="footer">Copyright 2017 <a href="https://itc.moe/" target="_blank" class="link">ITC</a>.</footer>
