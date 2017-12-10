@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import App from './App.vue'
+import Title from './Title.vue'
 import New from './components/New.vue'
 import Continue from './components/Continue.vue'
 import Day from './components/Day.vue'
@@ -18,6 +19,10 @@ import Calc from './components/Calc.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    component: Title
+  },
   {
     path: '/new',
     component: New
