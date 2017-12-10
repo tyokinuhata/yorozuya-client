@@ -23,7 +23,8 @@
       return {
         shopName: localStorage.getItem('shopName'),
         dayCount: localStorage.getItem('dayCount'),
-        dayOfWeek: localStorage.getItem('dayOfStage'),
+        dayOfWeek: localStorage.getItem('dayOfWeek'),
+        dayOfStage: localStorage.getItem('dayOfStage'),
         population: localStorage.getItem('population'),
         weather: localStorage.getItem('weather'),
         money: localStorage.getItem('money'),
@@ -31,9 +32,18 @@
         sellRecord: localStorage.getItem('sellRecord'),
         moneyRecord: localStorage.getItem('moneyRecord'),
         items: [
-          {path:"stocking", name:"仕入れ"}, 
-          {path:"opening", name:"開店"}, 
-          {path: "end", name: "終了"}
+          {
+            path:"stocking",
+            name:"仕入れ"
+          },
+          {
+            path:"opening",
+            name:"開店"
+          },
+          {
+            path: "end",
+            name: "終了"
+          }
         ],
         message: ""
       }
@@ -47,15 +57,35 @@
   position: relative;
 }
 
+.menu {
+  position: absolute;
+  bottom: 230px;
+  list-style: none;
+  font-weight: bold;
+  font-size: 16px;
+  & > a {
+    display: block;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      background: #aaa;
+    }
+  }
+}
+
 .message {
   position: absolute;
-  width: 100%;
   bottom: 1rem;
+  width: 90%;
+  margin: 0 2%;
   padding: 2rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #fff;
 }
 </style>
