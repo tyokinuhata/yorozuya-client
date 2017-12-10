@@ -1,28 +1,28 @@
 {
     "baseMessage": [
-        "「YOROZUYA」\nお店経営シュミレーション\nVer.0.1",
-        "とあるファンタジー世界の小さな町・・・\nあなたここで闇市を始めます。\n商品を安く仕入れて高く売って儲けましょう",
+        "「YOROZUYA」<br>お店経営シュミレーション<br>Ver.0.1",
+        "とあるファンタジー世界の小さな町・・・<br>あなたここで闇市を始めます。<br>商品を安く仕入れて高く売って儲けましょう",
         "店名を決めますか？",
         "店名は「{{shopName}}」でよろしいですか？",
-        "店名「{{shopName}}」\n{{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}\n資金： {{money}}　店の人気度： {{population}}\n売上記録：{{sellRecord}}　最高資金：{{moneyRecord}}"
+        "店名「{{shopName}}」<br>{{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}<br>資金： {{money}}　店の人気度： {{population}}<br>売上記録：{{sellRecord}}　最高資金：{{moneyRecord}}"
     ],
     "stocking": {
         "roasted-pork": [
             "いらっしゃいませ。",
-            "いくつ購入しますか？\n資金{{money}} 所持数：{{havingCount}}個",
-            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。\nよろしいですか？\n資金：{{money}}G",
+            "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
+            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
             "ありがとうございました"
         ],
         "ichimotsu": [
             "いらっしゃいませ。",
-            "いくつ購入しますか？\n資金{{money}} 所持数：{{havingCount}}個",
-            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。\nよろしいですか？\n資金：{{money}}G",
+            "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
+            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
             "ありがとうございました"
         ],
         "monsters-inc": [
             "いらっしゃいませ。",
-            "いくつ購入しますか？\n資金{{money}} 所持数：{{havingCount}}個",
-            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。\nよろしいですか？\n資金：{{money}}G",
+            "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
+            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
             "ありがとうございました"
         ]
     },
@@ -31,7 +31,7 @@
         "お客さんが全部で{{customerCount}}人やってきました",
         "{{dayOfStage}}になりました",
         "売上計算中.....",
-        "{{itemName}}の売却数：{{soldOutCount}}（残：{{remainCount}}）\n　売上：{{totalSellMoney}}G",
+        "{{itemName}}の売却数：{{soldOutCount}}（残：{{remainCount}}）<br>　売上：{{totalSellMoney}}G",
         "売上新記録が出ました！",
         "店の人気が上がった！",
         "売上合計：{{proceeds}}"
