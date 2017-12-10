@@ -1,24 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-    <router-link to="/foo">Foo</router-link>
-    <router-link to="/bar">Bar</router-link>
-    <router-view></router-view>
+    <div class="container">
+      <h1 class="title">経営シミュレーションゲーム<span>「YOROZUYA for ITC」</span></h1>
+      <div class="main">
+        <div class="game">
+          <router-link to="/foo">Foo</router-link>
+          <router-link to="/bar">Bar</router-link>
+          <router-view></router-view>
+        </div>
+        <a href="#" class="ranking link" target="_blank">ランキング ページ</a>
+      </div>
+      <hr class="hr">
+      <div class="sub">
+        <h2 class="subTitle">■スペシャルサンクス</h2>
+        <ul class="list">
+          <li><a href="http://www.shiftup.net/flash/game/scrYorozu.html" target="_blank" class="link">YOROZUYA</a> - リスペクト</li>
+          <li><a href="http://www.irasutoya.com/" target="_blank" class="link">いらすとや</a> - hogehoge</li>
+        </ul>
+      </div>
+      <footer class="footer">Copyright 2017 <a href="https://itc.moe/" target="_blank" class="link">ITC</a>.</footer>
+    </div>
   </div>
 </template>
 
@@ -41,31 +42,76 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background: #ede8de;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 700px;
+  background: #55864b;
+}
+
+.title {
+  margin: 0;
+  height: 60px;
+  line-height: 50px;
+  background: #36652c;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #e4feef;
+  font-size: 16px;
+  & > span {
+    font-size: 18px;
+  }
 }
 
-h1, h2 {
-  font-weight: normal;
+.game {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 80%;
+  height: 400px;
+  background: #000;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.ranking {
+  margin: 5px;
+  display: block;
+  text-align: center;
 }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
+.subTitle {
+  margin-left: 5px;
+  color: #e4feef;
+  font-size: 16px;
 }
 
-a {
-  color: #42b983;
+.footer {
+  position: absolute;
+  bottom: 0;
+  left:5px;
+  color: #e4feef;
+  font-style: italic;
+}
+
+.link {
+  color: #d2c7f0;
+  &:visited {
+    color: #f2cad9;
+  }
+  &:active {
+    color: #eb48f7
+  }
+}
+
+.list {
+  color: #e4feef;
+}
+
+.hr {
+  margin: 0 5px;
 }
 </style>
