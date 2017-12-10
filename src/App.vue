@@ -4,8 +4,6 @@
       <h1 class="title">経営シミュレーションゲーム<span>「YOROZUYA for ITC」</span></h1>
       <div class="main">
         <div class="game">
-          <router-link to="/new">New</router-link>
-          <router-link to="/continue">Continue</router-link>
           <router-view></router-view>
         </div>
         <a href="#" class="ranking link" target="_blank">ランキング ページ</a>
