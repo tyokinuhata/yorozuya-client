@@ -2,16 +2,291 @@
   "image" : {
     "employees": {
       "pig": {
-        "path": "",
-        "image": ""
+        "path": "public/img/boo_tar_sun"
+      },
+      "elephant": {
+        "path": "public/img/though_sun"
+      },
+      "monster": {
+        "path": "public/img/monster"
       }
     },
     "items": [
       {
-        "name": "",
-        "price": 0,
-        "image": "",
-        "path": ""
+        "name": "cyber_war",
+        "price": 300,
+        "path": "public/img/cyber_war",
+        "type": 1
+      },
+      {
+        "name": "email_virus",
+        "price": 240,
+        "path": "public/img/email_virus",
+        "type": 1
+      },
+      {
+        "name": "net_stalker",
+        "price": 190,
+        "path": "public/img/net_stalker",
+        "type": 1
+      },
+      {
+        "name": "ransomware",
+        "price": 170,
+        "path": "public/img/ransomware",
+        "type": 1
+      },
+      {
+        "name": "skimming",
+        "price": 160,
+        "path": "public/img/skimming",
+        "type": 1
+      },
+      {
+        "name": "toolkit",
+        "price": 150,
+        "path": "public/img/toolkit",
+        "type": 1
+      },
+      {
+        "name": "usb_memory_virus",
+        "price": 100,
+        "path": "public/img/usb_memory_virus",
+        "type": 1
+      },
+      {
+        "name": "campylobacter",
+        "price": 90,
+        "path": "public/img/campylobacter",
+        "type": 1
+      },
+      {
+        "name": "chouen_vibrio",
+        "price": 80,
+        "path": "public/img/chouen_vibrio",
+        "type": 1
+      },
+      {
+        "name": "ebola",
+        "price": 100,
+        "path": "public/img/ebola",
+        "type": 1
+      },
+      {
+        "name": "hiv",
+        "price": 90,
+        "path": "public/img/hiv",
+        "type": 1
+      },
+      {
+        "name": "mers",
+        "price": 90,
+        "path": "public/img/mers",
+        "type": 1
+      },
+      {
+        "name": "money_tsuchou_cashcard",
+        "price": 130,
+        "path": "public/img/money_tsuchou_cashcard",
+        "type": 1
+      },
+      {
+        "name": "o157",
+        "price": 100,
+        "path": "public/img/o157",
+        "type": 1
+      },
+      {
+        "name": "ousyoku_budou",
+        "price": 120,
+        "path": "public/img/ousyoku_budou",
+        "type": 1
+      },
+      {
+        "name": "pylori",
+        "price": 140,
+        "path": "public/img/pylori",
+        "type": 1
+      },
+      {
+        "name": "salmonella",
+        "price": 120,
+        "path": "public/img/salmonella",
+        "type": 1
+      },
+      {
+        "name": "welch_werusyu",
+        "price": 130,
+        "path": "public/img/welch_werusyu",
+        "type": 1
+      },
+      {
+        "name": "herb",
+        "price": 80,
+        "path": "public/img/herb",
+        "type": 1
+      },
+      {
+        "name": "marihuana",
+        "price": 70,
+        "path": "public/img/marihuana",
+        "type": 1
+      },
+      {
+        "name": "medical_capsule1",
+        "price": 60,
+        "path": "public/img/medical_capsule1",
+        "type": 1
+      },
+      {
+        "name": "medical_capsule2",
+        "price": 60,
+        "path": "public/img/medical_capsule2",
+        "type": 1
+      },
+      {
+        "name": "medical_tablet",
+        "price": 50,
+        "path": "public/img/medical_tablet",
+        "type": 1
+      },
+      {
+        "name": "poison",
+        "price": 60,
+        "path": "public/img/poison",
+        "type": 1
+      },
+      {
+        "name": "steroid",
+        "price": 50,
+        "path": "public/img/steroid",
+        "type": 1
+      },
+      {
+        "name": "credit_card_platina",
+        "price": 1000,
+        "path": "public/img/credit_card_platina",
+        "type": 2
+      },
+      {
+        "name": "credit_card_black",
+        "price": 800,
+        "path": "public/img/credit_card_black",
+        "type": 2
+      },
+      {
+        "name": "credit_card_gold",
+        "price": 500,
+        "path": "public/img/credit_card_gold",
+        "type": 2
+      },
+      {
+        "name": "cregit_card",
+        "price": 200,
+        "path": "public/img/cregit_card",
+        "type": 2
+      },
+      {
+        "name": "green_card",
+        "price": 250,
+        "path": "public/img/green_card",
+        "type": 2
+      },
+      {
+        "name": "money_cashcard",
+        "price": 250,
+        "path": "public/img/money_cashcard",
+        "type": 2
+      },
+      {
+        "name": "money_debit_card",
+        "price": 300,
+        "path": "public/img/money_debit_card",
+        "type": 2
+      },
+      {
+        "name": "my_number_card",
+        "price": 400,
+        "path": "public/img/my_number_card",
+        "type": 2
+      },
+      {
+        "name": "social_security_number",
+        "price": 600,
+        "path": "public/img/social_security_number",
+        "type": 2
+      },
+      {
+        "name": "personal_information",
+        "price": 600,
+        "path": "public/img/personal_information",
+        "type": 2
+      },
+      {
+        "name": "sd_card",
+        "price": 50,
+        "path": "public/img/sd_card",
+        "type": 2
+      },
+      {
+        "name": "sim_card",
+        "price": 70,
+        "path": "public/img/sim_card",
+        "type": 2
+      },
+      {
+        "name": "twitter_account",
+        "price": 90,
+        "path": "public/img/twitter_account",
+        "type": 2
+      },
+      {
+        "name": "upskiret_picture",
+        "price": 80,
+        "path": "public/img/upskiret_picture",
+        "type": 2
+      },
+      {
+        "name": "atomic_bomb",
+        "price": 8000,
+        "path": "public/img/atomic_bomb",
+        "type": 3
+      },
+      {
+        "name": "bakudan",
+        "price": 1250,
+        "path": "public/img/bakudan",
+        "type": 3
+      },
+      {
+        "name": "dynamite",
+        "price": 1500,
+        "path": "public/img/dynamite",
+        "type": 3
+      },
+      {
+        "name": "jirai",
+        "price": 300,
+        "path": "public/img/jirai",
+        "type": 3
+      },
+      {
+        "name": "missile",
+        "price": 2000,
+        "path": "public/img/missile",
+        "type": 3
+      },
+      {
+        "name": "time_bomb",
+        "price": 500,
+        "path": "public/img/time_bomb",
+        "type": 3
+      },
+      {
+        "name": "kidnapping",
+        "price": 600,
+        "path": "public/img/kidnapping",
+        "type": 3
       }
     ]
   }
