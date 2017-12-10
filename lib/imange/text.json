@@ -1,29 +1,18 @@
 {
   "image" : {
     "employees": {
-      "pig": "path",
-      "elephant": "path",
-      "monster": "path"
-    },
-    "items": {
-      "cards": {
-        "credit_card_platina": {
-          "path": "",
-          "type": ""
-        }
-      },
-      "drugs": {
-
-      },
-      "informations": {
-
-      },
-      "pathogen": {
-
-      },
-      "weapons": {
-
+      "pig": {
+        "path": "",
+        "image": ""
       }
-    }
+    },
+    "items": [
+      {
+        "name": "",
+        "price": 0,
+        "image": "",
+        "path": ""
+      }
+    ]
   }
 }
