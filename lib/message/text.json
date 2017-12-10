@@ -1,52 +1,39 @@
 {
-  "baseMessage": [
-    "「YOROZUYA」<br>お店経営シュミレーション<br>Ver.0.1",
-    "とあるファンタジー世界の小さな町・・・<br>あなたここで道具屋を始めます。<br>商品を安く仕入れたり、冒険で見つけたり、錬成",
-    "したり・・・<br>自分のお店に来てくれるお客さんに売って儲けましょう。",
-    "店名を決めますか？",
-    "店名は「{{shopName}}」でよろしいですか？",
-    "店名「{{shopName}}」<br>{{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}<br>資金： {{money}}　錬成技術： {{technologyLevel}}　店の人気度： {{population}}<br>見つけたアイテム： {{itemCount}}種類<br>売上記録：{{sellRecord}}　最高資金：{{moneyRecord}}",
-    "本日の業務を終了します。よろしいですか？",
-    "一日の生活費50Gを清算しました。<br>資金：{{money}}G",
-    "セーブデータを表示しますか？",
-    "セーブされました",
-    "{{date}}日目の朝になりました。"
-  ],
-  "stocking": {
-    "benimaru": [
-      "いらっしゃいませ。",
-      "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
-      "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
-      "ありがとうございました"
+    "baseMessage": [
+        "「YOROZUYA」<br>お店経営シュミレーション<br>Ver.0.1",
+        "とあるファンタジー世界の小さな町・・・<br>あなたここで闇市を始めます。<br>商品を安く仕入れて高く売って儲けましょう",
+        "店名を決めますか？",
+        "店名は「{{shopName}}」でよろしいですか？",
+        "店名「{{shopName}}」<br>{{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}<br>資金： {{money}}　店の人気度： {{population}}<br>売上記録：{{sellRecord}}　最高資金：{{moneyRecord}}"
     ],
-    "stardust": [
-      "いらっしゃいませ。",
-      "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
-      "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
-      "ありがとうございました"
-    ],
-    "X": [
-      "いらっしゃいませ。",
-      "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
-      "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
-      "ありがとうございました"
+    "stocking": {
+        "roasted-pork": [
+            "いらっしゃいませ。",
+            "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
+            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
+            "ありがとうございました"
+        ],
+        "ichimotsu": [
+            "いらっしゃいませ。",
+            "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
+            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
+            "ありがとうございました"
+        ],
+        "monsters-inc": [
+            "いらっしゃいませ。",
+            "いくつ購入しますか？<br>資金{{money}} 所持数：{{havingCount}}個",
+            "{{itemName}}を{{buyCount}}個で{{unitPrice}}です。<br>よろしいですか？<br>資金：{{money}}G",
+            "ありがとうございました"
+        ]
+    },
+    "opening": [
+        "店を開けますか？",
+        "お客さんが全部で{{customerCount}}人やってきました",
+        "{{dayOfStage}}になりました",
+        "売上計算中.....",
+        "{{itemName}}の売却数：{{soldOutCount}}（残：{{remainCount}}）<br>　売上：{{totalSellMoney}}G",
+        "売上新記録が出ました！",
+        "店の人気が上がった！",
+        "売上合計：{{proceeds}}"
     ]
-  },
-  "making": [
-    "名称：{{itemName}}　レア度：{{rarity}}<br>残数：{{stockCount}}　仕入値：{{unitPrice}} 売値：{{sellPrice}}<br>錬成：{{canMake}}",
-    "このアイテムは錬成できません",
-    "{{itemName}}を{{itemCount}}を錬成するには{{materialName}}が{{materialName}}個必要です。<br>よろしいですか？",
-    "{{itemName}}を{{itemCount}}個錬成した！",
-    "錬成経験値{{technologyExp}}獲得"
-  ],
-  "opening": [
-    "店を開けますか？",
-    "お客さんが全部で{{customerCount}}人やってきました",
-    "{{dayOfStage}}になりました",
-    "売上計算中.....",
-    "{{itemName}}の売却数：{{soldOutCount}}（残：{{remainCount}}）<br>　売上：{{totalSellMoney}}G",
-    "売上新記録が出ました！",
-    "店の人気が上がった！",
-    "売上合計：{{proceeds}}G<br>資金：{{money}}G"
-  ]
 }
