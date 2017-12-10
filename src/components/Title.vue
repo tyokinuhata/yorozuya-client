@@ -14,7 +14,7 @@
   module.exports = {
     data: function() {
       return {
-        message: "「YOROZUYA with Bitcoin」お店経営シュミレーションVer.0.1",
+        message: "「YOROZUYA for ITC」お店経営シュミレーション",
       }
     }
   }
@@ -31,14 +31,14 @@
   position: absolute;
   bottom: 10rem;
   & a {
+    display: block;
+    width: 5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    display: block;
-    width: 5rem;
-    padding: 0.5rem 1rem;
-    border: white solid 2px;
     &:hover {
       background-color:#aaa;
     }
@@ -48,11 +48,13 @@
 .message {
   position: absolute;
   bottom: 1rem;
+  width: 90%;
+  margin: 0 2%;
   padding: 2rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
   font-size: 1.2rem;
   font-weight: bold;
-  border: 2px solid #fff;
-  border-radius: 4px;
   color: #fff;
 }
 </style>
