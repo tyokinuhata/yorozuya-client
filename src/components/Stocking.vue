@@ -104,13 +104,14 @@ import Util from '../util/Util'
 
 .message {
   position: absolute;
-  width: 100%;
   bottom: 1rem;
+  width: 90%;
+  margin: 0 2%;
   padding: 2rem 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #fff;
 }
 </style>
