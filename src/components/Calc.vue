@@ -48,6 +48,9 @@ export default {
         let product = Math.floor(Math.random() * 45)
         let amount = Math.floor(Math.random() * (10 - 5) + 5)
         this.name = util.image.items[product].name
+
+        this.imgPath = require(util.image.items[product].path)
+        console.log(require(util.image.items[product].path))
         this.amount = amount
         this.price = price * amount * util.image.items[product].price
         this.path = util.image.items[product].path
@@ -76,5 +79,12 @@ export default {
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
+}
+
+.image img{
+  width:300px;
+  height: 300px;
+  margin: 0 auto;
+  display: block;
 }
 </style>
