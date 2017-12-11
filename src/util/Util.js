@@ -12,31 +12,31 @@ export default {
       }
     },
     items: [{
-        name: "cyber_war",
+        name: "サイバー攻撃",
         price: 300,
         path: "public/img/cyber_war",
         type: 1
       },
       {
-        name: "email_virus",
+        name: "ウイルスメール",
         price: 240,
         path: "public/img/email_virus",
         type: 1
       },
       {
-        name: "net_stalker",
+        name: "ネトスト",
         price: 190,
         path: "public/img/net_stalker",
         type: 1
       },
       {
-        name: "ransomware",
+        name: "ランサムウェア",
         price: 170,
         path: "public/img/ransomware",
         type: 1
       },
       {
-        name: "skimming",
+        name: "スキミング",
         price: 160,
         path: "public/img/skimming",
         type: 1
@@ -48,241 +48,241 @@ export default {
         type: 1
       },
       {
-        name: "usb_memory_virus",
+        name: "USB感染型マルウェア",
         price: 100,
         path: "public/img/usb_memory_virus",
         type: 1
       },
       {
-        name: "campylobacter",
+        name: "カンピロバクター",
         price: 90,
         path: "public/img/campylobacter",
         type: 1
       },
       {
-        name: "chouen_vibrio",
+        name: "腸炎ビブリオ",
         price: 80,
         path: "public/img/chouen_vibrio",
         type: 1
       },
       {
-        name: "ebola",
+        name: "エボラウイルス",
         price: 100,
         path: "public/img/ebola",
         type: 1
       },
       {
-        name: "hiv",
+        name: "HIV",
         price: 90,
         path: "public/img/hiv",
         type: 1
       },
       {
-        name: "mers",
+        name: "MERSコロナウイルス",
         price: 90,
         path: "public/img/mers",
         type: 1
       },
       {
-        name: "money_tsuchou_cashcard",
+        name: "通帳とキャッシュカード",
         price: 130,
         path: "public/img/money_tsuchou_cashcard",
         type: 1
       },
       {
-        name: "o157",
+        name: "O157",
         price: 100,
         path: "public/img/o157",
         type: 1
       },
       {
-        name: "ousyoku_budou",
+        name: "黄色ブドウ球菌",
         price: 120,
         path: "public/img/ousyoku_budou",
         type: 1
       },
       {
-        name: "pylori",
+        name: "ピロリ菌",
         price: 140,
         path: "public/img/pylori",
         type: 1
       },
       {
-        name: "salmonella",
+        name: "サルモネラ菌",
         price: 120,
         path: "public/img/salmonella",
         type: 1
       },
       {
-        name: "welch_werusyu",
+        name: "ウェルシュ菌",
         price: 130,
         path: "public/img/welch_werusyu",
         type: 1
       },
       {
-        name: "herb",
+        name: "脱法ハーブ",
         price: 80,
         path: "public/img/herb",
         type: 1
       },
       {
-        name: "marihuana",
+        name: "マリファナ",
         price: 70,
         path: "public/img/marihuana",
         type: 1
       },
       {
-        name: "medical_capsule1",
+        name: "気持ちよくなるクスリ",
         price: 60,
         path: "public/img/medical_capsule1",
         type: 1
       },
       {
-        name: "medical_capsule2",
+        name: "キマるクスリ",
         price: 60,
         path: "public/img/medical_capsule2",
         type: 1
       },
       {
-        name: "medical_tablet",
+        name: "MDMA",
         price: 50,
         path: "public/img/medical_tablet",
         type: 1
       },
       {
-        name: "poison",
+        name: "なにかの毒",
         price: 60,
         path: "public/img/poison",
         type: 1
       },
       {
-        name: "steroid",
+        name: "ステロイド",
         price: 50,
         path: "public/img/steroid",
         type: 1
       },
       {
-        name: "credit_card_platina",
+        name: "プラチナカード",
         price: 1000,
         path: "public/img/credit_card_platina",
         type: 2
       },
       {
-        name: "credit_card_black",
+        name: "ブラックカード",
         price: 800,
         path: "public/img/credit_card_black",
         type: 2
       },
       {
-        name: "credit_card_gold",
+        name: "ゴールドカード",
         price: 500,
         path: "public/img/credit_card_gold",
         type: 2
       },
       {
-        name: "cregit_card",
+        name: "クレジットカード",
         price: 200,
         path: "public/img/cregit_card",
         type: 2
       },
       {
-        name: "green_card",
+        name: "永住権",
         price: 250,
         path: "public/img/green_card",
         type: 2
       },
       {
-        name: "money_cashcard",
+        name: "マネーカード",
         price: 250,
         path: "public/img/money_cashcard",
         type: 2
       },
       {
-        name: "money_debit_card",
+        name: "デビットカード",
         price: 300,
         path: "public/img/money_debit_card",
         type: 2
       },
       {
-        name: "my_number_card",
+        name: "マイナンバーカード",
         price: 400,
         path: "public/img/my_number_card",
         type: 2
       },
       {
-        name: "social_security_number",
+        name: "社会保障番号",
         price: 600,
         path: "public/img/social_security_number",
         type: 2
       },
       {
-        name: "personal_information",
+        name: "個人情報",
         price: 600,
         path: "public/img/personal_information",
         type: 2
       },
       {
-        name: "sd_card",
+        name: "ヤバイSDカード",
         price: 50,
         path: "public/img/sd_card",
         type: 2
       },
       {
-        name: "sim_card",
+        name: "SIMカード",
         price: 70,
         path: "public/img/sim_card",
         type: 2
       },
       {
-        name: "twitter_account",
+        name: "Twitterアカウント",
         price: 90,
         path: "public/img/twitter_account",
         type: 2
       },
       {
-        name: "upskiret_picture",
+        name: "盗撮",
         price: 80,
         path: "public/img/upskiret_picture",
         type: 2
       },
       {
-        name: "atomic_bomb",
+        name: "核爆弾",
         price: 8000,
         path: "public/img/atomic_bomb",
         type: 3
       },
       {
-        name: "bakudan",
+        name: "爆弾",
         price: 1250,
         path: "public/img/bakudan",
         type: 3
       },
       {
-        name: "dynamite",
+        name: "ダイナマイト",
         price: 1500,
         path: "public/img/dynamite",
         type: 3
       },
       {
-        name: "jirai",
+        name: "地雷",
         price: 300,
         path: "public/img/jirai",
         type: 3
       },
       {
-        name: "missile",
+        name: "ミサイル",
         price: 2000,
         path: "public/img/missile",
         type: 3
       },
       {
-        name: "time_bomb",
+        name: "時限爆弾",
         price: 500,
         path: "public/img/time_bomb",
         type: 3
       },
       {
-        name: "kidnapping",
+        name: "誘拐",
         price: 600,
         path: "public/img/kidnapping",
         type: 3
