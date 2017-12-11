@@ -1,13 +1,22 @@
 <template>
-  <div>calc</div>
+  <div class="game-wrapper">
+    <div class="message">
+      {{ name }}が{{ amount }}個売れて{{ price }}Gになりました。
+    </div>
+  </div>
 </template>
 
 <script>
 import axios from 'axios'
 
+import util from '../util/Util.js'
+
 export default {
   data() {
     return {
+      message: '',
+      name: '',
+      amount: 0,
       price: 0,
     }
   },
@@ -34,8 +43,11 @@ export default {
         for (let i = 0; i < 5; i++) {
           price += data[i]
         }
-        console.log(price)
-        this.price = price
+        let product = Math.floor(Math.random() * 45)
+        let amount = Math.floor(Math.random() * (10 - 5) + 5)
+        this.name = util.image.items[product].name
+        this.amount = amount
+        this.price = price * amount * util.image.items[product].price
       })
       .catch(error => {
         console.log(error)
@@ -45,5 +57,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.game-wrapper {
+  height: 100%;
+  position: relative;
+}
 
+.message {
+  position: absolute;
+  bottom: 1rem;
+  width: 90%;
+  margin: 0 2%;
+  padding: 2rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
 </style>
