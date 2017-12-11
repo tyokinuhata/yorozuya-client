@@ -1,8 +1,6 @@
 <template>
   <div class="game-wrapper">
-    <div class="image">
-      <img :src="imgPath" alt="">
-    </div>
+    <img :src="path" alt="">
     <div class="message">
       {{ name }}が{{ amount }}個売れて{{ price }}Gになりました。
     </div>
@@ -21,7 +19,7 @@ export default {
       name: '',
       amount: 0,
       price: 0,
-      imgPath: ''
+      path: ''
     }
   },
   methods: {
@@ -55,6 +53,7 @@ export default {
         console.log(require(util.image.items[product].path))
         this.amount = amount
         this.price = price * amount * util.image.items[product].price
+        this.path = util.image.items[product].path
       })
       .catch(error => {
         console.log(error)
