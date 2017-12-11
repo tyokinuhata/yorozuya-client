@@ -1,7 +1,7 @@
 <template>
   <div class="game-wrapper">
-    <div class="message">
-      <div>お客さんが全部で{{ customer }}人やってきました</div>
+    <div class="message" @click="next">
+      {{message}}
     </div>
   </div>
 </template>
@@ -10,7 +10,30 @@
 export default {
   data() {
     return {
+      message: '',
       customer: Math.floor((Math.floor(Math.random() * (20 - 10) + 10) * (1 + localStorage.getItem('population') / 10)))
+    }
+  },
+  created: function() {
+    this.message = `お客さんが全部で${ this.customer }人やってきました`
+  },
+  methods: {
+    next: function() {
+      let now = localStorage.getItem('dayOfStage')
+      switch(now) {
+        case '朝': 
+          localStorage.setItem('dayOfStage', '昼')
+          this.message = '昼になりました'
+          window.location = '/#/calc'
+          break
+        case '昼':
+          localStorage.setItem('dayOfStage', '夜')
+          this.message = '夜になりました'
+          window.location = '/#/calc'        
+          break
+        case '夜':
+          localStorage.setItem('dayOfStage', '朝');
+      }
     }
   }
 }
