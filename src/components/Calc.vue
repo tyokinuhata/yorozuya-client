@@ -1,5 +1,7 @@
 <template>
-  <div>calc</div>
+  <div class="message">
+
+  </div>
 </template>
 
 <script>
@@ -8,6 +10,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      message: '',
       price: 0,
     }
   },
