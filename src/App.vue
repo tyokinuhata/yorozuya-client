@@ -22,8 +22,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   name: 'app',
   data() {
@@ -31,12 +29,6 @@ export default {
       msg: 'Welcome to Your Vue.js App'
     }
   },
-  created() {
-//    axios.get('url')
-//    .then(response => {
-//      console.log(response);
-//    })
-  }
 }
 </script>
 
