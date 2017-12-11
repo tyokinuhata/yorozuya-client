@@ -1,6 +1,6 @@
 <template>
   <div class="game-wrapper">
-    <img :src="path" alt="">
+    <img :style="{ backgroundImage: `url('${path}')` }" alt="">
     <div class="message">
       {{ name }}が{{ amount }}個売れて{{ price }}Gになりました。
     </div>
