@@ -1,20 +1,20 @@
 <template>
 <div class="game-wrapper">
-    <ul class="menu">
-      <router-link :to="item.path" v-for="item in items">
-        <li>
-          {{item.name}}
-        </li>
-      </router-link>
-    </ul>
-    <div class="message">
-      店名「{{shopName}}」<br>
-      {{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}<br>
-      資金： {{money}}G　店の人気度： {{population}}<br>
-      見つけたアイテム： {{itemCount}}種類<br>
-      売上記録：{{sellRecord}}G　最高資金：{{moneyRecord}}G
-    </div>
+  <ul class="menu">
+    <router-link :to="item.path" v-for="item in items">
+      <li>
+        {{item.name}}
+      </li>
+    </router-link>
+  </ul>
+  <div class="message">
+    店名「{{shopName}}」<br>
+    {{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}<br>
+    資金： {{money}}G　店の人気度： {{population}}<br>
+    見つけたアイテム： {{itemCount}}種類<br>
+    売上記録：{{sellRecord}}G　最高資金：{{moneyRecord}}G
   </div>
+</div>
 </template>
 
 <script>
