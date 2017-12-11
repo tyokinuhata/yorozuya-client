@@ -1,5 +1,8 @@
 <template>
   <div class="game-wrapper">
+    <div class="image">
+      <img :src="imgPath" alt="">
+    </div>
     <div class="message">
       {{ name }}が{{ amount }}個売れて{{ price }}Gになりました。
     </div>
@@ -18,6 +21,7 @@ export default {
       name: '',
       amount: 0,
       price: 0,
+      imgPath: ''
     }
   },
   methods: {
@@ -46,6 +50,9 @@ export default {
         let product = Math.floor(Math.random() * 45)
         let amount = Math.floor(Math.random() * (10 - 5) + 5)
         this.name = util.image.items[product].name
+
+        this.imgPath = require(util.image.items[product].path)
+        console.log(require(util.image.items[product].path))
         this.amount = amount
         this.price = price * amount * util.image.items[product].price
       })
@@ -73,5 +80,12 @@ export default {
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
+}
+
+.image img{
+  width:100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
 }
 </style>
