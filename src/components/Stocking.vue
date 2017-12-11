@@ -46,7 +46,7 @@ import Util from '../util/Util'
       },
       selectCount: function(element) {
         if (element === "戻る") {
-          this.menuFlag = 'yes';
+          this.menuFlag = 'item';
           this.message = "何を買いますか？"
           return
         }
