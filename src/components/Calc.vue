@@ -54,6 +54,7 @@ export default {
         this.amount = amount
         this.price = price * amount * util.image.items[product].price
         this.path = util.image.items[product].path
+        location.reload()
       })
       .catch(error => {
         console.log(error)
