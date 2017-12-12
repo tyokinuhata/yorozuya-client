@@ -1,6 +1,7 @@
 <template>
   <div class="game-wrapper">
-    <img alt="">
+    <!--<img src="../assets/materials/items/cards/credit_card.png" alt="">-->
+    <img :src="path" alt="">
     <div class="message">
       {{ name }}が{{ amount }}個売れて{{ price }}Gになりました。
     </div>
@@ -41,6 +42,7 @@
       this.name = util.image.items[product].name
       this.price = this.price * util.image.items[product].price
       this.path = util.image.items[product].path
+      console.log(this.path)
 
       axios.get('/api/price')
         .then(response => {
