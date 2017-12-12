@@ -1,6 +1,8 @@
 <template>
   <div class="game-wrapper">
-    <img :src="path" alt="">
+    <div class="image">
+      <img :src="path" alt="">
+    </div>
     <div class="message">
       {{ name }}が{{ amount }}個売れて{{ price }}Gになりました。
     </div>
@@ -85,11 +87,13 @@
     color: #fff;
   }
 
-  .image img {
+  .image {
+    display: block;
+    margin: 0 auto;
     width: 300px;
     height: 300px;
-    margin: 0 auto;
-    display: block;
+    & > img {
+      width: 100%;
+    }
   }
-
 </style>
