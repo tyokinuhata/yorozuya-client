@@ -1,6 +1,5 @@
 <template>
   <div class="game-wrapper">
-    <!--<img src="../assets/materials/items/cards/credit_card.png" alt="">-->
     <img :src="path" alt="">
     <div class="message">
       {{ name }}が{{ amount }}個売れて{{ price }}Gになりました。
@@ -38,9 +37,8 @@
       let data
 
       let product = Math.floor(Math.random() * 45)
-      this.imgPath = util.image.items[product].path
       this.name = util.image.items[product].name
-      this.price = this.price * util.image.items[product].price
+      this.price = util.image.items[product].price
       this.path = util.image.items[product].path
       console.log(this.path)
 
@@ -58,7 +56,7 @@
           }
 
           this.amount = Math.floor(Math.random() * (10 - 5) + 5)
-          this.price = this.price * this.amount
+          this.price = this.price * price * this.amount
         })
         .catch(error => {
           console.log(error)
