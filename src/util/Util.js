@@ -242,7 +242,7 @@ export default {
       {
         name: "盗撮",
         price: 80,
-        path: "../../public/materials/items/informations/upskiret_picture.png",
+        path: "../../public/materials/items/informations/upskirt_picture.png",
         type: 2
       },
       {
