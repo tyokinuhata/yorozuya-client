@@ -36,29 +36,28 @@
       }
     },
     created() {
-      let data
+      let bitcoin
 
       let product = Math.floor(Math.random() * 45)
       this.name = util.image.items[product].name
       this.price = util.image.items[product].price
       this.path = util.image.items[product].path
-      console.log(this.path)
 
       axios.get('/api/price')
         .then(response => {
-          data = this.sliceBtc(response.data.price)
+          bitcoin = this.sliceBtc(response.data.price)
 
-          data = data.map(function (element) {
+          bitcoin = bitcoin.map(function (element) {
             return Number(element)
           })
 
-          let price = data[0]
+          let price = bitcoin[0]
           for (let i = 0; i < 5; i++) {
-            price += data[i]
+            price += bitcoin[i]
           }
 
           this.amount = Math.floor(Math.random() * (10 - 5) + 5)
-          this.price = this.price * price * this.amount
+          this.price = (this.price + price) * this.amount
         })
         .catch(error => {
           console.log(error)
