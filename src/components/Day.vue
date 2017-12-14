@@ -1,25 +1,25 @@
 <template>
-<div class="game-wrapper">
-  <ul class="menu">
-    <router-link :to="item.path" v-for="item in items">
-      <li>
-        {{item.name}}
-      </li>
-    </router-link>
-  </ul>
-  <div class="message">
-    店名「{{shopName}}」<br>
-    {{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}<br>
-    資金： {{money}}G　店の人気度： {{population}}<br>
-    見つけたアイテム： {{itemCount}}種類<br>
-    売上記録：{{sellRecord}}G　最高資金：{{moneyRecord}}G
+  <div class="game-wrapper">
+    <ul class="menu">
+      <router-link :to="item.path" v-for="item in items">
+        <li>
+          {{item.name}}
+        </li>
+      </router-link>
+    </ul>
+    <div class="message">
+      店名「{{shopName}}」<br>
+      {{dayCount}}日目　{{dayOfWeek}}曜日　{{dayOfStage}}　{{weather}}<br>
+      資金： {{money}}G　店の人気度： {{population}}<br>
+      見つけたアイテム： {{itemCount}}種類<br>
+      売上記録：{{sellRecord}}G　最高資金：{{moneyRecord}}G
+    </div>
   </div>
-</div>
 </template>
 
 <script>
   export default {
-    data: function() {
+    data() {
       return {
         shopName: localStorage.getItem('shopName'),
         dayCount: localStorage.getItem('dayCount'),
@@ -33,12 +33,12 @@
         moneyRecord: localStorage.getItem('moneyRecord'),
         items: [
           {
-            path:"stocking",
-            name:"仕入れ"
+            path: "select",
+            name: "仕入れ"
           },
           {
-            path:"opening",
-            name:"開店"
+            path: "opening",
+            name: "開店"
           },
           {
             path: "end",

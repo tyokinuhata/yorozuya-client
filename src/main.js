@@ -9,6 +9,7 @@ import Day from './components/Day.vue'
 import Morning from './components/Morning.vue'
 import Afternoon from './components/Afternoon.vue'
 import Evening from './components/Evening.vue'
+import Select from './components/Select.vue'
 import Stocking from './components/Stocking.vue'
 import Making from './components/Making.vue'
 import Adventure from './components/Adventure.vue'
@@ -46,6 +47,10 @@ const routes = [
   {
     path: '/day/evening',
     component: Evening
+  },
+  {
+    path: '/select',
+    component: Select
   },
   {
     path: '/stocking',
