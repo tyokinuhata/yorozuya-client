@@ -50,7 +50,7 @@
     font-size: 16px;
     & > a {
       display: block;
-      width: 5rem;
+      width: 7rem;
       padding: 0.5rem 1rem;
       border: 1px solid #fff;
       text-decoration: none;
